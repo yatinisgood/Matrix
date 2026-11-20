@@ -101,21 +101,14 @@
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2">
-              <span>🎯 選擇 5 天 4 夜出發日期（自動換算星期與店家公休提醒）</span>
+              <span>✈️ 已定案出發日期：11/28（六）～ 12/02（三）</span>
             </h2>
             <p class="text-sm text-slate-600 mt-1">
-              預設為已訂妥機票與飯店檔期 <strong>11/28（六）～ 12/02（三）</strong>，亦可切換其他日期檢視對應星期與注意事項：
+              機票（長榮 BR192 去 / BR191 回）與飯店（APA〈秋葉原末廣町站前〉4 晚）皆已訂妥，以下為各天星期與店家公休提醒：
             </p>
           </div>
           <div class="flex items-center gap-2">
-            <label for="startDateSelect" class="text-sm font-medium text-slate-700 whitespace-nowrap">出發日：</label>
-            <select id="startDateSelect" onchange="updateDates()" class="bg-blue-50 border border-blue-300 text-blue-900 text-sm font-semibold rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <option value="2026-11-28" selected>✈️ 已定案：11/28 (六) ～ 12/02 (三) 【BR192去/BR191回・APA秋葉原末廣町】</option>
-              <option value="2026-11-29">備選 B：11/29 (日) ～ 12/03 (四) 【週日出發・Day 2～4 全平日】</option>
-              <option value="2026-11-30">備選 C：11/30 (一) ～ 12/04 (五) 【純平日出發】</option>
-              <option value="2026-12-01">備選 D：12/01 (二) ～ 12/05 (六) 【週二出發】</option>
-              <option value="2026-12-02">備選 E：12/02 (三) ～ 12/06 (日) 【週三出發】</option>
-            </select>
+            <input type="hidden" id="startDateSelect" value="2026-11-28">
           </div>
         </div>
 
@@ -947,14 +940,6 @@
       let alerts = [];
       if (startStr === '2026-11-28') {
         alerts.push('✈️ <strong>已訂妥機票＆飯店（11/28 六 ～ 12/02 三｜長榮 BR192 去 / BR191 回 TWD 37,792 ＋ APA 飯店〈秋葉原末廣町站前〉4 晚 ¥76,200 現地支付）：</strong><br>・<strong>Day 1（11/28 週六）</strong>：11:00 提早抵羽田，<strong>東京大神宮＆神樂坂 11 大名店（梅花亭、大野屋、ACHO、PAUL、la kagū、Le Bretagne）100% 全開零公休</strong>！v3 先逛 THE JUMP SHOP 神保町，仍可在 17:10 逛到 ACHO，趕得上週末 18:00 打烊，晚上再看東京巨蛋城燈飾！<br>・<strong>Day 2（11/29 週日）</strong>：新宿丸井別館＋池袋動漫二手挖寶（⚠️週日人潮多，熱門店可能要排隊）。<br>・<strong>Day 3（11/30 週一浦安＋下北澤）＆ Day 4（12/01 週二去富士山）皆為平日</strong>，完美避開河口湖與下吉田的週末人潮！（⚠️ 舊宇田川家住宅週一公休，只能看外觀）<br>・<strong>Day 5（12/02 週三）</strong>：回程 <code>BR191</code> 為中午 <strong>12:15 起飛</strong>，早上不用摸黑趕車，08:30 退房、09:15 抵羽田 T3 從容退稅！');
-      } else if (startStr === '2026-11-29') {
-        alerts.push('✨ <strong>備選 B（11/29 日 ～ 12/03 四）平日優勢：</strong>Day 1（週日）東京大神宮與神樂坂名店全開，且 <strong>Day 2（新宿＋池袋）、Day 3（浦安＋下北澤）、Day 4（河口湖富士山）全部落在平日（週一～週三）</strong>！');
-      } else if (startStr === '2026-11-30') {
-        alerts.push('💡 <strong>週一出發完全免改行程（取消棋院紅利）：</strong>取消日本棋院後，<strong>週一（11/30）出發也完全不受博物館週一休館限制</strong>！僅神樂坂晚餐「Le Bretagne 法式薄餅」週一公休。');
-      } else if (startStr === '2026-12-02') {
-        alerts.push('💡 <strong>備選 E（12/02 三 ～ 12/06 日）：</strong>Day 1（週三）神樂坂「梅花亭」公休，Day 2（週四新宿＋池袋）、Day 3（週五浦安＋下北澤）為平日，Day 4（週六）去富士山。');
-      } else {
-        alerts.push('💡 <strong>12月初平日檔期優勢：</strong>取消昭和紀念公園與日本棋院後，任何一天出發都零休館限制！且 Day 2～Day 4 可看《富士見予報》隨時把河口湖調到最晴朗的一天！');
       }
       alertBanner.innerHTML = alerts.join('<br>');
 
