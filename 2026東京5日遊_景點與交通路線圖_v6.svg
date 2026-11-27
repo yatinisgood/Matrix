@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1050" width="1600" height="1050" style="background:#f8fafc; font-family: 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="bayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bfdbfe"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="hubShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#dc2626" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Background Map Land & Water -->
+  <rect x="0" y="0" width="1600" height="1050" fill="#f8fafc"/>
+  
+  <!-- Subtle Grid -->
+  <g stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="0" y1="250" x2="1600" y2="250"/>
+    <line x1="0" y1="450" x2="1600" y2="450"/>
+    <line x1="0" y1="650" x2="1600" y2="650"/>
+    <line x1="0" y1="850" x2="1600" y2="850"/>
+    <line x1="350" y1="110" x2="350" y2="1050"/>
+    <line x1="750" y1="110" x2="750" y2="1050"/>
+    <line x1="1150" y1="110" x2="1150" y2="1050"/>
+  </g>
+
+  <!-- Tokyo Bay Area (Bottom Right) -->
+  <path d="M 1030,1050 L 1050,820 Q 1080,680 1240,640 L 1450,590 L 1600,630 L 1600,1050 Z" fill="url(#bayGrad)" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="1260" y="825" fill="#0369a1" font-size="22" font-weight="bold" opacity="0.45" letter-spacing="4">東京灣 TOKYO BAY</text>
+
+  <!-- Yamanashi / Mt Fuji Area Background (Left) -->
+  <rect x="25" y="135" width="380" height="680" rx="24" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2" stroke-dasharray="8,6"/>
+  <text x="215" y="172" text-anchor="middle" fill="#1e40af" font-size="16" font-weight="bold">🏔️ 山梨縣・富士山河口湖區域（Day 3）</text>
+
+  <!-- Mt. Fuji Illustration -->
+  <g transform="translate(95, 520)">
+    <polygon points="110,0 20,145 200,145" fill="#3b82f6" opacity="0.85"/>
+    <polygon points="110,0 72,62 92,55 110,68 128,55 148,62" fill="#ffffff"/>
+    <text x="110" y="170" text-anchor="middle" fill="#1e3a8a" font-size="16" font-weight="bold">🗻 富士山 (Mt. Fuji)</text>
+  </g>
+  <!-- Lake Kawaguchiko shape -->
+  <ellipse cx="205" cy="435" rx="95" ry="32" fill="url(#lakeGrad)" stroke="#60a5fa" stroke-width="2"/>
+  <text x="205" y="440" text-anchor="middle" fill="#1e3a8a" font-size="13" font-weight="bold">河口湖</text>
+
+  <!-- Top Header Banner -->
+  <rect x="0" y="0" width="1600" height="110" fill="url(#headerGrad)"/>
+  <text x="45" y="50" fill="#ffffff" font-size="28" font-weight="bold">🗺️ 2026 冬・東京親子自由行 5天4夜（v6 富士山雙方案版）景點方位與直達交通全覽圖</text>
+  <text x="45" y="84" fill="#bfdbfe" font-size="15.5">11/28(六)～12/02(三)｜D1(雨備) 室內池袋、D2(晴10%) 浦安解鎖古宅＋下北澤、D3(平日) 富士山【🅰️遙拜所 / 🅱️大石公園】、D4(19°C) 神樂坂</text>
+
+  <!-- Compass -->
+  <g transform="translate(1535, 56)">
+    <circle cx="0" cy="0" r="34" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#cardShadow)"/>
+    <polygon points="0,-24 -8,6 0,0 8,6" fill="#dc2626"/>
+    <polygon points="0,24 -8,-6 0,0 8,-6" fill="#94a3b8"/>
+    <text x="0" y="-21" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="bold">N</text>
+  </g>
+
+  <!-- ================= RAILWAY & BUS ROUTES ================= -->
+  <!-- Route 1: Akihabara -> Shinjuku -> Kawaguchiko (Day 3) -->
+  <path d="M 780,450 Q 520,450 325,380" fill="none" stroke="#7c3aed" stroke-width="6" stroke-dasharray="12,6"/>
+  <rect x="425" y="425" width="240" height="46" rx="23" fill="#7c3aed" filter="url(#cardShadow)"/>
+  <text x="545" y="446" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">🚆 Day 3：富士回遊(1-3車) / 大月轉乘</text>
+  <text x="545" y="463" text-anchor="middle" fill="#ede9fe" font-size="11">新宿➔河口湖｜回程從下吉田站搭回新宿</text>
+
+  <!-- Route 2: Akihabara -> Shinjuku Marui Annex -> Ikebukuro (Day 1) -->
+  <path d="M 720,410 Q 650,385 600,352" fill="none" stroke="#9333ea" stroke-width="6"/>
+  <rect x="455" y="361" width="215" height="38" rx="19" fill="#9333ea" filter="url(#cardShadow)"/>
+  <text x="562" y="378" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">🚃 Day 1：JR總武＋中央線・山手線</text>
+  <text x="562" y="392" text-anchor="middle" fill="#f3e8ff" font-size="11">秋葉原➔新宿約20分｜新宿➔池袋約20分</text>
+
+  <!-- Route 3: Akihabara -> Jimbocho -> Iidabashi / Kagurazaka -> Tokyo Dome (Day 4) -->
+  <path d="M 930,410 Q 1000,395 1080,386" fill="none" stroke="#2563eb" stroke-width="6"/>
+  <rect x="985" y="396" width="240" height="38" rx="19" fill="#2563eb" filter="url(#cardShadow)"/>
+  <text x="1105" y="413" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">🚃 Day 4：神保町➔東西線➔飯田橋</text>
+  <text x="1105" y="427" text-anchor="middle" fill="#dbeafe" font-size="11">回程飯田橋搭JR總武線2站(4分)回秋葉原</text>
+
+  <!-- Route 4: Akihabara -> Urayasu (Day 2 morning) -->
+  <path d="M 970,468 Q 1100,472 1235,470" fill="none" stroke="#0284c7" stroke-width="5" stroke-dasharray="8,6"/>
+  <rect x="985" y="446" width="240" height="38" rx="19" fill="#0284c7" filter="url(#cardShadow)"/>
+  <text x="1105" y="463" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">🚇 Day 2：銀座線➔日本橋轉東西線</text>
+  <text x="1105" y="477" text-anchor="middle" fill="#e0f2fe" font-size="11">末廣町➔浦安站 約30分直達清瀧神社</text>
+
+  <!-- Route 5: Shin-Urayasu -> Shimokitazawa (Day 2 midday) -->
+  <path d="M 1235,530 Q 1030,580 885,690" fill="none" stroke="#0284c7" stroke-width="4" stroke-dasharray="6,6"/>
+  <rect x="955" y="574" width="150" height="38" rx="19" fill="#0284c7" filter="url(#cardShadow)"/>
+  <text x="1030" y="591" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">🚃 新浦安➔下北澤</text>
+  <text x="1030" y="605" text-anchor="middle" fill="#e0f2fe" font-size="11">搭車約 52 分鐘</text>
+
+  <!-- Route 6: Shibuya -> Suehirocho by Ginza Line (Day 2 evening) -->
+  <path d="M 700,620 L 735,532" fill="none" stroke="#db2777" stroke-width="6"/>
+  <rect x="560" y="556" width="240" height="38" rx="19" fill="#db2777" filter="url(#cardShadow)"/>
+  <text x="680" y="573" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">🚇 Day 2 回程：東京Metro 銀座線</text>
+  <text x="680" y="587" text-anchor="middle" fill="#fce7f3" font-size="11">澀谷是起站有座位，一班車直達末廣町！</text>
+
+  <!-- Route 7: Akihabara to Haneda Airport (Day 1 & Day 5) -->
+  <path d="M 855,532 Q 980,740 1075,865" fill="none" stroke="#059669" stroke-width="5" stroke-dasharray="8,6"/>
+  <rect x="895" y="790" width="215" height="40" rx="20" fill="#059669" filter="url(#cardShadow)"/>
+  <text x="1002" y="808" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">🚝 單軌電車＋JR山手線（25分直達）</text>
+  <text x="1002" y="823" text-anchor="middle" fill="#d1fae5" font-size="11">秋葉原 ⇄ 濱松町 ⇄ 羽田T3 約 25 分鐘</text>
+
+
+  <!-- ================= CENTRAL HUB: AKIHABARA APA ================= -->
+  <g transform="translate(680, 410)" filter="url(#hubShadow)">
+    <rect x="0" y="0" width="290" height="122" rx="16" fill="#dc2626" stroke="#ffffff" stroke-width="3"/>
+    <text x="145" y="26" text-anchor="middle" fill="#fef08a" font-size="14.5" font-weight="bold">✅ 已訂妥住宿基地（4晚免換飯店）</text>
+    <text x="145" y="48" text-anchor="middle" fill="#ffffff" font-size="14.5" font-weight="bold">APA 飯店〈秋葉原末廣町站前〉（電器街）</text>
+    <line x1="16" y1="58" x2="274" y2="58" stroke="#fca5a5" stroke-width="1"/>
+    <text x="145" y="77" text-anchor="middle" fill="#fef08a" font-size="12" font-weight="bold">💰 日本官網預訂 4 晚總價 ¥76,200（現場支付）</text>
+    <text x="145" y="95" text-anchor="middle" fill="#fee2e2" font-size="11.5">🚇 銀座線「末廣町站」走1分・JR「秋葉原站」走6分</text>
+    <text x="145" y="113" text-anchor="middle" fill="#fee2e2" font-size="11">（2024.07 全新開幕！樓下即秋葉原動漫街＆餐廳）</text>
+  </g>
+
+
+  <!-- ================= DAY 1 (v5 RAIN PLAN): SHINJUKU MARUI ANNEX + IKEBUKURO ================= -->
+  <g transform="translate(415, 130)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="560" height="222" rx="14" fill="#ffffff" stroke="#9333ea" stroke-width="3"/>
+    <rect x="0" y="0" width="560" height="34" rx="12" fill="#9333ea"/>
+    <text x="14" y="23" fill="#ffffff" font-size="13" font-weight="bold">Day 1（11/28 六・雨後放晴☔全室內備案）｜新宿丸井別館 ➔ 池袋動漫日</text>
+    <text x="14" y="54" fill="#475569" font-size="11.5">🧳 12:35 羽田 T3 抵秋葉原飯店寄放行李 ➔ 13:05 搭車直奔新宿（約 20 分）</text>
+    <text x="14" y="74" fill="#0f172a" font-size="12" font-weight="bold">1️⃣ 13:30 新宿丸井別館 Marui Annex（4F seria、6F otomate，停留約 1 小時）</text>
+    <text x="14" y="94" fill="#b45309" font-size="12" font-weight="bold">2️⃣ 14:55 yellow 池袋蛋包飯（11:00–22:00 無午休！避開正午排隊尖峰）</text>
+    <text x="14" y="114" fill="#1e40af" font-size="12" font-weight="bold">3️⃣ 15:50 animate 池袋本店（全球最大動漫旗艦店・女兒買 CD＆周邊）</text>
+    <text x="14" y="134" fill="#be185d" font-size="12" font-weight="bold">4️⃣ 16:50 Stella Worth ➔ BOOKOFF 陽光60通 ➔ K-BOOKS 乙女館</text>
+    <text x="14" y="154" fill="#047857" font-size="12" font-weight="bold">5️⃣ 18:20 Sunshine City 太陽城（3F 扭蛋百貨・寶可夢・無印・⚠️商店20:00打烊）</text>
+    <text x="14" y="175" fill="#0f172a" font-size="11.5" font-weight="bold">🍜 20:15 晚餐（太陽城內／無敵家／敘敘苑）➔ 搭 JR 山手線回秋葉原</text>
+    <text x="14" y="198" fill="#6b21a8" font-size="11.5" font-weight="bold">☔ 全程室內商場與專門店，第一天就算遇雨也能輕鬆逛爆！</text>
+  </g>
+
+
+  <!-- ================= DAY 4 (v5): JIMBOCHO JUMP SHOP + TOKYO DAIJINGU + KAGURAZAKA + TOKYO DOME CITY ================= -->
+  <g transform="translate(1000, 130)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="575" height="256" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+    <rect x="0" y="0" width="575" height="32" rx="12" fill="#2563eb"/>
+    <text x="14" y="22" fill="#ffffff" font-size="13" font-weight="bold">Day 4（12/01 二・19°C 慢遊✨）｜神保町 JUMP ➔ 東京大神宮 ➔ 神樂坂 ➔ 巨蛋城</text>
+    <text x="14" y="52" fill="#dc2626" font-size="11.5" font-weight="bold">1️⃣ 10:00 THE JUMP SHOP 神保町（三省堂4F，10:00開門）➔ 11:30 東西線往飯田橋</text>
+    <text x="14" y="71" fill="#475569" font-size="11.5">2️⃣ 11:50 CANAL CAFE 水岸午餐／咖啡 ➔ 不二家神樂坂店（Peko 醬人形燒）</text>
+    <text x="14" y="90" fill="#be185d" font-size="11.5" font-weight="bold">3️⃣ 13:15 東京大神宮（求幸福鈴蘭御守與戀愛籤）</text>
+    <text x="14" y="109" fill="#b45309" font-size="11.5" font-weight="bold">4️⃣ 14:00 捉迷藏橫丁 ＆ 兵庫橫丁（午後陽光拍黑塀石板路超美！）</text>
+    <text x="14" y="128" fill="#047857" font-size="11.5" font-weight="bold">5️⃣ 14:45 神樂坂通：五十番大肉包 ➔ 善國寺(⚠️17:00關) ➔ PAUL ➔ 大野屋 ➔ 梅花亭</text>
+    <text x="14" y="147" fill="#1e40af" font-size="11.5" font-weight="bold">6️⃣ 16:15 la kagū (AKOMEYA) ➔ Aux Merveilleux(⚠️19:00關) ➔ 赤城神社黃昏點燈</text>
+    <text x="14" y="166" fill="#0f766e" font-size="11.5" font-weight="bold">7️⃣ 17:45 Le Bretagne 法式可麗餅晚餐（✅週二正常營業！避開週一公休）</text>
+    <text x="14" y="185" fill="#dc2626" font-size="11">　⚠️ 備註：僅 ACHO 布丁週二公休，其餘 10 大名店全開！</text>
+    <text x="14" y="206" fill="#7c3aed" font-size="11.5" font-weight="bold">8️⃣ 19:30 東京巨蛋城冬季燈飾（約 21:00 打烊）➔ JR 總武線 2 站回秋葉原</text>
+    <text x="14" y="227" fill="#b45309" font-size="11.5" font-weight="bold">🧳 最後一晚早回飯店，從容把所有免稅退稅品集中放行李箱「最上層」！</text>
+    <text x="14" y="245" fill="#475569" font-size="10.5">🔄 可與 Day 3（富士山）對調（若調到週一，Le Bretagne 公休、ACHO 營業）</text>
+  </g>
+
+
+  <!-- ================= DAY 2 (v5 SUNNY 10%): URAYASU SEIRYU SHRINE ================= -->
+  <g transform="translate(1235, 400)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="340" height="155" rx="14" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+    <rect x="0" y="0" width="340" height="32" rx="12" fill="#0284c7"/>
+    <text x="14" y="21" fill="#ffffff" font-size="13" font-weight="bold">Day 2 上午（11/29 日・晴10%☀️）｜千葉浦安</text>
+    <text x="14" y="50" fill="#0f172a" font-size="14.5" font-weight="bold">⛩️ 09:30 浦安・清瀧神社（海神神社）</text>
+    <text x="14" y="70" fill="#0369a1" font-size="11.5" font-weight="bold">・必買：季節鏤空剪紙御朱印＆海龜貝殼御守</text>
+    <text x="14" y="88" fill="#047857" font-size="11.5" font-weight="bold">・✅ 10:00 舊宇田川家住宅（週日開館！解鎖！）</text>
+    <text x="14" y="106" fill="#475569" font-size="11.5">・10:30 前往新浦安站打卡（步行或公車170円）</text>
+    <text x="14" y="124" fill="#475569" font-size="11">　★ 小孩備註：新浦安站一定要打卡不能刪</text>
+    <text x="14" y="143" fill="#be185d" font-size="11.5" font-weight="bold">🚃 11:15 新浦安 ➔ 下北澤（搭車約 52 分）</text>
+  </g>
+
+  <!-- ================= DAY 2 (v5): SHIMOKITAZAWA ================= -->
+  <g transform="translate(465, 620)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="420" height="184" rx="14" fill="#ffffff" stroke="#db2777" stroke-width="3"/>
+    <rect x="0" y="0" width="420" height="34" rx="12" fill="#db2777"/>
+    <text x="14" y="23" fill="#ffffff" font-size="13.5" font-weight="bold">Day 2 下午＆傍晚（11/29 日）｜下北澤古着街 ➔ 澀谷回飯店</text>
+    <text x="14" y="53" fill="#0f172a" font-size="13" font-weight="bold">1️⃣ 12:15 虹色CURRY食堂（下北澤午餐）</text>
+    <text x="14" y="73" fill="#047857" font-size="12" font-weight="bold">2️⃣ 13:20 NEW YORK JOE EXCHANGE（舊澡堂改建古着交換店）</text>
+    <text x="14" y="92" fill="#b45309" font-size="12" font-weight="bold">3️⃣ 14:20 BAZZSTORE 下北澤北口店 ➔ 15:20 Stick Out（均一價）</text>
+    <text x="14" y="111" fill="#7e22ce" font-size="12" font-weight="bold">4️⃣ 16:30 BIG TIME 下北澤（古着）</text>
+    <text x="14" y="131" fill="#dc2626" font-size="12" font-weight="bold">5️⃣ 17:30 京王井之頭線 ➔ 澀谷（想逛可順路 PARCO／109）</text>
+    <text x="14" y="151" fill="#0f172a" font-size="11.5" font-weight="bold">🚇 澀谷站搭銀座線（起站有座位）直達末廣町回飯店</text>
+    <text x="14" y="170" fill="#1e40af" font-size="11.5" font-weight="bold">📱 睡前看《富士見予報》確認明天 Day 3 是否照常去富士山！</text>
+  </g>
+
+
+  <!-- ================= v5 WEATHER STRATEGY BOX ================= -->
+  <g transform="translate(1110, 570)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="465" height="190" rx="14" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+    <rect x="0" y="0" width="465" height="32" rx="12" fill="#f59e0b"/>
+    <text x="14" y="21" fill="#ffffff" font-size="13" font-weight="bold">🌦️ v5 氣象優化策略（依 2026/11/27 11:00 東京一週預報）</text>
+    <text x="14" y="52" fill="#9333ea" font-size="12" font-weight="bold">☔ D1 (11/28 六・雨後放晴)：原 D2 往前，全室內逛新宿＋池袋</text>
+    <text x="26" y="70" fill="#475569" font-size="11">・避開可能下雨的神樂坂石板路，第一天就先滿足動漫購物清單</text>
+    <text x="14" y="92" fill="#0284c7" font-size="12" font-weight="bold">☀️ D2 (11/29 日・晴天10%)：原 D3 提前，解鎖週一公休古宅！</text>
+    <text x="26" y="110" fill="#475569" font-size="11">・全週天氣最好，舊宇田川家住宅週日開館，下午下北澤超好逛</text>
+    <text x="14" y="132" fill="#7c3aed" font-size="12" font-weight="bold">🏔️ D3 (11/30 一・20%) 富士山 ⇄ D4 (12/01 二・19°C) 神樂坂</text>
+    <text x="26" y="150" fill="#475569" font-size="11">・週一承接晴天氣流且保留 D4 退路；週二 19°C 逛神樂坂且</text>
+    <text x="26" y="168" fill="#0f766e" font-size="11" font-weight="bold">　Le Bretagne 正常營業（避開週一公休），最後一晚從容打包！</text>
+  </g>
+
+  <!-- ================= DAY 3 (v6 DUAL PLAN): KAWAGUCHIKO & FUJIYOSHIDA ================= -->
+  <g transform="translate(32, 185)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="365" height="248" rx="14" fill="#ffffff" stroke="#7c3aed" stroke-width="3"/>
+    <rect x="0" y="0" width="365" height="32" rx="12" fill="#7c3aed"/>
+    <text x="12" y="21" fill="#ffffff" font-size="12" font-weight="bold">Day 3（11/30 一）｜富士山雙方案：🅰️遙拜所 / 🅱️大石公園</text>
+    <text x="12" y="48" fill="#6d28d9" font-size="11.5" font-weight="bold">🚆 去程：新宿「富士回遊(⚠️1-3車)」或大月轉富士急行線</text>
+    <text x="12" y="65" fill="#be123c" font-size="11" font-weight="bold">🚌 河口湖站 1 號月台搭「紅線公車」(每15分・刷Suica)</text>
+    <text x="12" y="84" fill="#1d4ed8" font-size="11.5" font-weight="bold">🅰️ 方案A(健行)：15音樂盒之森 ➔ 淺間神社 ➔ 爬坡遙拜所</text>
+    <text x="12" y="102" fill="#15803d" font-size="11.5" font-weight="bold">🅱️ 方案B(輕鬆)：20大石公園(終點¥570・免爬坡)➔花露台</text>
+    <text x="12" y="120" fill="#047857" font-size="11" font-weight="bold">🍲 12:15 共用午餐：餺飥不動北本店(B案搭回程紅線至14站)</text>
+    <text x="12" y="138" fill="#dc2626" font-size="11" font-weight="bold">🚌 13:46/14:50 14河口湖美術館前 搭甲府線(17分)➔富士山站</text>
+    <text x="12" y="156" fill="#0f172a" font-size="11.5" font-weight="bold">4️⃣ 14:05/15:07 富士山站：拍「金鳥居」＋逛「Q-STA 百貨」</text>
+    <text x="12" y="174" fill="#be185d" font-size="11.5" font-weight="bold">5️⃣ 15:15/15:45 搭2站至「下吉田站」➔ 拍「日川時計店」</text>
+    <text x="12" y="192" fill="#1e40af" font-size="11" font-weight="bold">🚆 拍完直接從「下吉田站」搭電車回東京（免回河口湖站）</text>
+    <text x="12" y="210" fill="#dc2626" font-size="11" font-weight="bold">🧣 氣溫提醒：11/30 河口湖清晨近0°C，太冷可直接選🅱️案！</text>
+    <text x="12" y="228" fill="#475569" font-size="10.5">🔄 若週二能見度優於週一，可直接與 Day 4（神樂坂）對調！</text>
+  </g>
+
+
+  <!-- ================= DAY 5: HANEDA AIRPORT ================= -->
+  <g transform="translate(970, 865)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="440" height="135" rx="14" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+    <rect x="0" y="0" width="440" height="34" rx="12" fill="#059669"/>
+    <text x="15" y="23" fill="#ffffff" font-size="14" font-weight="bold">Day 1(11/28) 抵達 ＆ Day 5(12/02) 返台｜羽田第3航廈 (HND)</text>
+    <text x="15" y="54" fill="#0f172a" font-size="13.5" font-weight="bold">✈️ 長榮 BR192(07:15-11:00) / BR191(12:15-15:05)｜雙人 TWD 37,792</text>
+    <text x="15" y="76" fill="#dc2626" font-size="12" font-weight="bold">🚨 2026/11/1 退稅新制：Day 5 提早於 09:15 到機場！</text>
+    <text x="15" y="96" fill="#475569" font-size="12">1️⃣ 絕對不能先托運！先推行李去出發大廳「退稅機台(Kiosk)」刷護照</text>
+    <text x="15" y="115" fill="#475569" font-size="12">2️⃣ 亮綠燈直接去長榮托運；亮紅燈由海關查驗後托運 ➔ 逛免稅店</text>
+  </g>
+
+  <!-- Legend Box (Bottom Left) -->
+  <g transform="translate(45, 845)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="465" height="155" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="20" y="30" fill="#0f172a" font-size="15" font-weight="bold">📌 v6 版（氣象優化＋富士山雙方案）地圖圖例與行程順序</text>
+    <line x1="20" y1="42" x2="445" y2="42" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="65" fill="#334155" font-size="13">・<tspan fill="#dc2626" font-weight="bold">紅框（秋葉原末廣町 APA）</tspan>4 晚連住，放射狀直達各景點。</text>
+    <text x="20" y="88" fill="#334155" font-size="13">・<tspan fill="#9333ea" font-weight="bold">D1 室內池袋(雨備)</tspan> ➔ <tspan fill="#db2777" font-weight="bold">D2 晴天浦安＋下北澤</tspan></text>
+    <text x="32" y="108" fill="#334155" font-size="13">➔ <tspan fill="#7c3aed" font-weight="bold">D3 週一富士山</tspan> ⇄ <tspan fill="#2563eb" font-weight="bold">D4 週二19°C神樂坂</tspan></text>
+    <text x="20" y="132" fill="#334155" font-size="13">・路線顏色＝當日卡片顏色；<tspan fill="#0284c7" font-weight="bold">虛線</tspan>為長途或跨區移動。</text>
+  </g>
+</svg>
